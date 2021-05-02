@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mine-container {
+  padding: 0 7em;
+}
+.main-btn {
+  padding: 0.4rem 1rem;
+  color: #ff9100;
+  font-size: 1.2em;
+  font-weight: 650;
+  background-color: transparent;
+  border: 2px solid #ff9100;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.main-btn:hover {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 650;
+  background-color: #ff9100;
+  border: 2px solid #ff9100;
+}
+.secondary-btn {
+  padding: 0.4rem 1rem;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 650;
+  background-color: #ff9100;
+  border: 2px solid #ff9100;
+  transition: all 0.2s ease-in-out;
+}
+.secondary-btn:hover {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 650;
+  background-color: transparent;
+  border: 2px solid #ff9100;
+}

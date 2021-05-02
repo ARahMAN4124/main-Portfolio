@@ -1,0 +1,65 @@
+.Contact {
+  background-color: #000;
+}
+.contact-title > h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 25px;
+  margin-left: 4em;
+  margin-top: 3em;
+  font-weight: 650;
+  transition: all 0.3s ease-in-out;
+}
+.contact-title {
+  position: relative;
+}
+.contact-title > hr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8%;
+  height: 100%;
+  border-top: 3px solid #ff9100;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.Contact > .row > .col-md-10:hover .contact-title > hr {
+  transform: translateX(5em);
+  width: 18%;
+  border-color: #fff;
+  -webkit-transform: translateX(5em);
+  -moz-transform: translateX(5em);
+  -ms-transform: translateX(5em);
+  -o-transform: translateX(5em);
+}
+.Contact > .row > .col-md-10:hover .contact-title > h2 {
+  color: #ff9100;
+}
+.form-div > input,
+.form-div > textarea,
+.form-div > input:focus,
+.form-div > textarea:focus {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ff9100;
+  width: 50%;
+}
+.Ready-to-start {
+  width: 101%;
+  padding: 4em 0;
+  background-color: rgb(18, 0, 65);
+}
+.Ready-to-start > div {
+  text-align: center;
+}
+.Ready-to-start h2 {
+  font-size: 60px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 650;
+}

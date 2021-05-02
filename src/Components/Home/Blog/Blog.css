@@ -1,0 +1,58 @@
+.blog {
+  padding: 2em 7em;
+  background-color: rgb(0, 0, 0);
+}
+.blog-title > h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 25px;
+  margin-left: 3em;
+  font-weight: 650;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.blog-title {
+  position: relative;
+}
+.blog-title > hr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5%;
+  height: 100%;
+  border-top: 3px solid #ff9100;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.blog:hover .blog-title > h2 {
+  color: #ff9100;
+}
+.blog:hover .blog-title > hr {
+  transform: translateX(3.5em);
+  width: 8%;
+  border-top: 3px solid #fff;
+  -webkit-transform: translateX(3.5em);
+  -moz-transform: translateX(3.5em);
+  -ms-transform: translateX(3.5em);
+  -o-transform: translateX(3.5em);
+}
+.blog-card {
+  height: 400px;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1.5px dotted #ff9100;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.blog-card > img {
+  height: 150px;
+}
