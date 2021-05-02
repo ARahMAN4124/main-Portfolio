@@ -1,16 +1,54 @@
 import React from "react";
 import "./Contact.css";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const handleContactFrom = (event) => {
-    event.preventDefault();
-    const clientMessage = {
-      Name: event.target.name.value,
-      Phone: event.target.phone.value,
-      Message: event.target.message.value,
-    };
-    console.log(clientMessage);
-  };
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_iptnrvr",
+        "template_l80mj8y",
+        e.target,
+        "user_mFhNVyxPtthlQ8Q4FYkN7"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          if (result) {
+            alert("Send Your Message");
+          }
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
+  // const handleContactFrom = (e) => {
+  //   e.preventDefault();
+  //   const clientMessage = {
+  //     Name: e.target.name.value,
+  //     Phone: e.target.phone.value,
+  //     Message: e.target.message.value,
+  //   };
+  //   console.log(clientMessage);
+  //   emailjs
+  //     .sendForm(
+  //       "service_iptnrvr",
+  //       "template_l80mj8y",
+  //       clientMessage,
+  //       "user_mFhNVyxPtthlQ8Q4FYkN7"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
   return (
     <section className="Contact ">
       <div className="row  m-0 Contact-row">
@@ -23,22 +61,23 @@ const Contact = () => {
             <hr />
           </div>
           <div className="pt-5 pl-5">
-            <form onSubmit={handleContactFrom}>
+            <form className="contact-form" onSubmit={sendEmail}>
               <div className="form-div mb-3">
+                <input type="hidden" name="to_name" value="Abdur Rahman" />
                 <input
                   type="text"
                   className="form-control"
-                  name="name"
+                  name="from_name"
                   placeholder="Name"
                   id=""
                 />
               </div>
               <div className="form-div mb-3">
                 <input
-                  type="tel"
+                  type="email"
                   className="form-control"
-                  name="phone"
-                  placeholder="Phone"
+                  name="reply_to"
+                  placeholder="Email"
                   id=""
                 />
               </div>
@@ -57,6 +96,40 @@ const Contact = () => {
                 </button>
               </div>
             </form>
+            {/* <form onSubmit={handleContactFrom}>
+              <div className="form-div mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  name="user_name"
+                  placeholder="Name"
+                  id=""
+                />
+              </div>
+              <div className="form-div mb-3">
+                <input
+                  type="email"
+                  className="form-control"
+                  name="user_email"
+                  placeholder="Email"
+                  id=""
+                />
+              </div>
+              <div className="form-div mb-3">
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  cols="30"
+                  className="form-control"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div className="form-div mb-3">
+                <button type="submit" className="secondary-btn">
+                  Send Message
+                </button>
+              </div>
+            </form> */}
           </div>
         </div>
       </div>
