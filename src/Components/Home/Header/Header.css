@@ -12,6 +12,10 @@
   font-weight: 700;
   color: #ff9100;
 }
+.typeAnimationText {
+  font-size: 22px;
+  font-weight: 600;
+}
 .header-img {
   width: 80%;
 }

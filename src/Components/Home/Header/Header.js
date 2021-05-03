@@ -4,6 +4,7 @@ import headerImg from "../../../Images/hero-img.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import MyPDF from "../../../Images/Abdur-Rahman-Resume PSD final Version.pdf";
+import Typical from "react-typical";
 
 const Header = () => {
   return (
@@ -16,7 +17,22 @@ const Header = () => {
               <br />
               <span className="main-name">ABDUR RAHMAN</span>
             </h1>
-            <div className="mt-3 downloadCv">
+            <Typical
+              steps={[
+                "Font-end Developer",
+                3000,
+                "Web Designer",
+                3000,
+                "Wordpress Expart",
+                3000,
+                "Learner",
+                3000,
+              ]}
+              loop={Infinity}
+              className="typeAnimationText"
+              wrapper="p"
+            />
+            <div className="mt-4 downloadCv">
               <a
                 download="My_File.pdf"
                 href={MyPDF}
