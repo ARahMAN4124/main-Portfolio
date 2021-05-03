@@ -10,11 +10,7 @@
 .AboutMe .about-left {
   padding-left: 7em;
 }
-.AboutMe .about-right {
-  background: rgb(18, 0, 65);
-  width: 100%;
-  padding-right: 7em;
-}
+
 .about-title > h2 {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
@@ -63,6 +59,20 @@
   margin-top: 1em;
   font-weight: 500;
 }
+
+.social-link .social-icon {
+  font-size: 1.5em;
+  color: #fff;
+  margin: 0 0.2em;
+}
+.social-link .social-icon:hover {
+  color: #ff9100;
+}
+.AboutMe .about-right {
+  background: rgb(18, 0, 65);
+  width: 100%;
+  padding-right: 7em;
+}
 .skill-area {
   padding-left: 4em;
 }
@@ -71,14 +81,6 @@
   color: #ff9100;
   font-size: 25px;
   font-weight: 650;
-}
-.social-link .social-icon {
-  font-size: 1.5em;
-  color: #fff;
-  margin: 0 0.2em;
-}
-.social-link .social-icon:hover {
-  color: #ff9100;
 }
 
 .skill-title > h2 {
@@ -116,4 +118,35 @@
   -moz-transform: translateX(4em);
   -ms-transform: translateX(4em);
   -o-transform: translateX(4em);
+}
+
+@media (max-width: 993px) {
+  .AboutMe .about-left {
+    padding: 0 4em;
+  }
+  .about-area > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 550;
+  }
+  .AboutMe {
+    width: 100%;
+    padding: 2em 0;
+  }
+  .about-area > p {
+    padding-right: 1em;
+  }
+  .AboutMe .about-right {
+    padding-right: 3em;
+    padding-bottom: 3rem;
+  }
+  .skill-area {
+    padding-left: 3em;
+  }
+}
+@media (max-width: 768px) {
+  .AboutMe .about-left {
+    padding: 0 3em;
+    margin-bottom: 3em;
+  }
 }

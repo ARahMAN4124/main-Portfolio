@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <div className="footer mine-container">
-      <div className=" d-flex justify-content-between align-items-center">
+      <div className=" d-flex justify-content-between flex-wrap align-items-center">
         <div>
           <a href="">
             <img

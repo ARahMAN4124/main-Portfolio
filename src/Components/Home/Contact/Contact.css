@@ -1,6 +1,9 @@
 .Contact {
   background-color: #000;
 }
+.Contact-title > h2 {
+  margin-left: -1em;
+}
 .contact-title > h2 {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
@@ -62,4 +65,64 @@
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 650;
+}
+@media (max-width: 993px) {
+  .Contact-title > h2 {
+    margin-left: -1.7em;
+  }
+  .Ready-to-start h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .Contact-title > h2 {
+    margin-left: 0em;
+  }
+  .form-div > input,
+  .form-div > textarea,
+  .form-div > input:focus,
+  .form-div > textarea:focus {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff9100;
+    width: 80%;
+  }
+  .Ready-to-start {
+    width: 102%;
+    padding: 4em 0;
+    background-color: rgb(18, 0, 65);
+  }
+  .Ready-to-start h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 368px) {
+  .Contact > .row > .col-md-10:hover .contact-title > hr {
+    transform: translateX(2em);
+    width: 70%;
+    border-color: #fff;
+    -webkit-transform: translateX(2em);
+    -moz-transform: translateX(2em);
+    -ms-transform: translateX(2em);
+    -o-transform: translateX(2em);
+  }
+  .contact-title > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 25px;
+    margin-left: 2em;
+    margin-top: 3em;
+    font-weight: 650;
+    transition: all 0.3s ease-in-out;
+  }
+  .Ready-to-start {
+    width: 104%;
+    padding: 4em 0;
+    background-color: rgb(18, 0, 65);
+  }
+  .Ready-to-start h2 {
+    font-size: 18px;
+  }
 }

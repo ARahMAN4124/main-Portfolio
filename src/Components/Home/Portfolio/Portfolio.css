@@ -14,9 +14,7 @@
 .portfolio-title > h2 {
   margin-left: -1.6em;
 }
-.Contact-title > h2 {
-  margin-left: -1em;
-}
+
 .portfolio-title > h2,
 .Contact-title > h2 {
   color: #ff9100;
@@ -27,21 +25,8 @@
   font-family: Arial, Helvetica, sans-serif;
   transform: rotate(-90deg);
 }
-.project-details {
-  height: 600px;
-  border: 1px solid red;
-  display: flex;
-  align-items: center;
-}
-.project-click > div > h3 {
-  color: #ff9100;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  font-weight: 650;
-}
 .projectCard {
   height: 250px;
-  background-color: #ff9100;
 }
 .projects {
   padding: 0 5em;
@@ -51,104 +36,54 @@
   height: 100%;
 }
 
-/* 
-
-.Portfolio {
-  padding: 2em 0;
-  background-color: #000;
+@media (max-width: 993px) {
+  .portfolio-title > h2 {
+    margin-left: -2.5em;
+  }
+  .Portfolio-row > .col-md-2,
+  .Contact-row > .col-md-2 {
+    height: auto;
+    background-color: rgb(18, 0, 65);
+  }
 }
-.Portfolio-row,
-.Contact-row {
-  width: 100%;
+@media (max-width: 768px) {
+  .portfolio-title > h2 {
+    margin-left: 0;
+  }
+  .Portfolio-row > .col-md-2,
+  .Contact-row > .col-md-2 {
+    height: 7rem;
+    width: 100%;
+    background-color: rgb(18, 0, 65);
+  }
+  .portfolio-title > h2,
+  .Contact-title > h2 {
+    font-size: 2.5em;
+    padding-left: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  .projects {
+    padding: 2em 3em;
+  }
 }
-.Portfolio-row > .col-md-2,
-.Contact-row > .col-md-2 {
-  height: 600px;
-  background-color: rgb(18, 0, 65);
+@media (max-width: 368px) {
+  .Portfolio-row > .col-md-2,
+  .Contact-row > .col-md-2 {
+    height: 5rem;
+    width: 100%;
+    background-color: rgb(18, 0, 65);
+  }
+  .portfolio-title > h2,
+  .Contact-title > h2 {
+    font-size: 2em;
+    padding-left: 3rem;
+    font-weight: 600;
+  }
 }
-.portfolio-title > h2 {
-  margin-left: -1.6em;
-}
-.Contact-title > h2 {
-  margin-left: -1em;
-}
-.portfolio-title > h2,
-.Contact-title > h2 {
-  color: #ff9100;
-  font-size: 4em;
-  padding: 0;
-  font-weight: 700;
-  letter-spacing: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  transform: rotate(-90deg);
-}
-.project-details {
-  height: 600px;
-  border: 1px solid #ff9100;
-  display: flex;
-}
-.project-click > div > h3 {
-  color: #ff9100;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  font-weight: 650;
-}
-
-.singleProject {
-  cursor: pointer;
-}
-.singleProject > img {
-  height: 100px;
-}
-.projects {
-  padding: 0 5em;
-}
-.projectCard > a > img {
-  width: 150px;
-  height: 250px;
-}
-.project-details-img > img {
-  width: 750px;
-}
-.project-details-text {
-  margin: 1rem 0 0 1rem;
-}
-.project-details-text > h2 {
-  color: #ff9100;
-}
-.project-subTitle {
-  color: aliceblue;
-  font-size: 22px;
-  font-weight: 650;
-  margin-top: 1rem;
-}
-.project-tool {
-  background-image: linear-gradient(to right, rgb(18, 0, 65), rgb(72, 3, 245));
-  padding: 0.1rem;
-  text-align: center;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  cursor: pointer;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-.project-tool > h6 {
-  padding-top: 0.1rem;
-}
-.codeLink {
-  margin-top: 2rem;
-  border-radius: 20px;
-  padding: 00.5rem 1rem;
-  background-color: #ff9100;
-  color: aliceblue;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-.codeLink:hover {
-  color: aliceblue;
-} */

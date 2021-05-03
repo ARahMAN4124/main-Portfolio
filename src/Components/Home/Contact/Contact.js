@@ -25,30 +25,6 @@ const Contact = () => {
         }
       );
   }
-  // const handleContactFrom = (e) => {
-  //   e.preventDefault();
-  //   const clientMessage = {
-  //     Name: e.target.name.value,
-  //     Phone: e.target.phone.value,
-  //     Message: e.target.message.value,
-  //   };
-  //   console.log(clientMessage);
-  //   emailjs
-  //     .sendForm(
-  //       "service_iptnrvr",
-  //       "template_l80mj8y",
-  //       clientMessage,
-  //       "user_mFhNVyxPtthlQ8Q4FYkN7"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
   return (
     <section className="Contact ">
       <div className="row  m-0 Contact-row">

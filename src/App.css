@@ -43,3 +43,13 @@
   background-color: transparent;
   border: 2px solid #ff9100;
 }
+@media (max-width: 993px) {
+  .mine-container {
+    padding: 0 4em;
+  }
+}
+@media (max-width: 768px) {
+  .mine-container {
+    padding: 0 3em;
+  }
+}

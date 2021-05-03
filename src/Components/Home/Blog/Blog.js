@@ -11,7 +11,7 @@ const Blog = () => {
         <h2>BLOG</h2>
         <hr />
         <h5 className="text-secondary">My Blogs.</h5>
-        <div className="row w-100 mt-5">
+        <div className="row w-100 mt-5 m-0">
           <div className="col-lg-4 col-md-6 col-sm-12 mb-3">
             <div className="blog-card">
               <img src={blogImg1} className="img-fluid" alt="" />

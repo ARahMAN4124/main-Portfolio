@@ -9,23 +9,25 @@ const Header = () => {
   return (
     <div className="Header">
       <div className="row header-flex mine-container d-flex align-items-center justify-content-center">
-        <div className="col">
-          <h1>
-            Hello, I’m
-            <br />
-            <span className="main-name">ABDUR RAHMAN</span>
-          </h1>
-          <div className="mt-3 downloadCv">
-            <a
-              download="My_File.pdf"
-              href={MyPDF}
-              className="main-btn  text-decoration-none"
-            >
-              Download CV <FontAwesomeIcon icon={faDownload} />
-            </a>
+        <div className="col-md-6 col-sm-12">
+          <div className="hello-word">
+            <h1>
+              <small>Hello, I’m</small>
+              <br />
+              <span className="main-name">ABDUR RAHMAN</span>
+            </h1>
+            <div className="mt-3 downloadCv">
+              <a
+                download="My_File.pdf"
+                href={MyPDF}
+                className="main-btn  text-decoration-none"
+              >
+                Download CV <FontAwesomeIcon icon={faDownload} />
+              </a>
+            </div>
           </div>
         </div>
-        <div className="col">
+        <div className="col-md-6 col-sm-12 d-flex justify-content-center mt-5 ">
           <img src={headerImg} className="img-fluid header-img" alt="" />
         </div>
       </div>
