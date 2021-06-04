@@ -75,7 +75,7 @@ const AboutMe = () => {
               <h2>ABOUT ME</h2>
               <hr />
             </div>
-            <h1>I'm a Font-end Web Developer.</h1>
+            <h1>I'm a Front-end Web Developer.</h1>
             <p>
               I’m Md. Abdur Rahman. A professional Font-end Web Developer. I am
               confident about my skill and I can complete any kind of Javascript

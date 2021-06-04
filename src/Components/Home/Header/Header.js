@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import MyPDF from "../../../Images/Abdur-Rahman-Resume PSD final Version.pdf";
 import Typical from "react-typical";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (

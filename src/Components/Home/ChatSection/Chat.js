@@ -8,7 +8,13 @@ const Chat = () => {
           <h2>
             Ready to start creating a standard <br /> website?
           </h2>
-          <button className="mt-3 main-btn">Let's Chat</button>
+          <a
+            className="mt-3 main-btn text-decoration-none"
+            target="_bank"
+            href="https://www.linkedin.com/in/abdur-rahman01/"
+          >
+            Let's Chat
+          </a>
         </div>
       </div>
     </div>

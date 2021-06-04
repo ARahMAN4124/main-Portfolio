@@ -29,29 +29,95 @@
   height: 250px;
   position: relative;
 }
-.projectCard::after {
-  content: "";
+.overlay {
   position: absolute;
-  background-color: rgba(255, 0, 0, 0.219);
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 0;
-  height: 100%;
+  opacity: 0;
+  z-index: 8;
+  background-color: #2424248e;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.projectCard:hover .overlay {
+  opacity: 1;
+}
+.Card-details {
+  position: absolute;
+  padding: 5px 10px;
+
+  width: 100%;
+  height: 0;
+  left: 0;
+  color: #ffffff;
+  bottom: 0;
+  z-index: 10;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(44, 4, 221, 0), rgb(44, 4, 221));
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.projectCard:hover .Card-details {
+  position: absolute;
+  height: 90%;
+}
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+}
+.links {
+  display: flex;
+}
+.codeLink,
+.siteLink {
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  color: #ff9100;
+  background-color: #ffffff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.codeLink,
+.siteLink {
+  text-decoration: none;
+  color: #ff9100;
+}
+.codeLink:hover,
+.siteLink:hover {
+  text-decoration: none;
+  color: #ff9100;
+}
+.tools > div {
+  background-color: #ff9100;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  color: #ffffff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .projectCard:hover .projectCard::after {
-  background-color: rgba(0, 0, 255, 0.383);
-  width: 100%;
+  background-color: #ff910083;
 }
 .projectCard > img {
   width: 100%;
   height: 100%;
-}
-.project-details {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
 }
 
 .projects {
